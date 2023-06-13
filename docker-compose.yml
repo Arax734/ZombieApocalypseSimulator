@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  webserver:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"   # Map port 8080 of localhost to port 80 of the web server container
+    volumes:
+      - ./web:/var/www/html
+    depends_on:
+      - database
+
+  database:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"   # Map port 5432 of localhost to port 5432 of the database container
+    volumes:
+      - ./db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres

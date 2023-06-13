@@ -1,0 +1,116 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Apoc;
+    src: url('../fonts/HugeCrack-X3zJg.otf') format('opentype');
+  }  
+
+.flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    background: url("../images/background.jpg") no-repeat center;
+}
+
+#main-window{
+    width: auto;
+    height: auto;
+    background-color: grey;
+    border-radius: 50px;
+    flex-direction: column;
+    font-family: Apoc;
+    font-size: 9px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+#main-window a{
+    text-shadow: 2px 2px 5px gainsboro;
+    font-size: 12px;
+}
+
+#main-window h2{
+    text-shadow: 2px 2px 5px gainsboro;
+}
+
+#main-window button{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    outline: none;
+    border-radius: 10px;
+    border:none;
+    width: 100px;
+    height: 40px;
+    font-family: Apoc;
+    background-color: green;
+    transition: ease-in-out 0.2s;
+}
+
+#main-window button:hover{
+    background-color: greenyellow;
+}
+
+#apocdatas{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#apocdatas a{
+    font-size: 12px;
+    text-shadow: 2px 2px 5px gainsboro;
+}
+
+#apocdatas input{
+    outline:none;
+    text-align: center;
+    font-family: Apoc;
+    margin-left: 10px;
+    width: 230px;
+    border-radius: 10px;
+    border:none;
+    transition: ease-in-out 0.2s;
+}
+
+#apocdatas input:focus{
+    box-shadow: green 0px 0px 20px 2px;
+}
+
+.data-holder{
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#description {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#description h3 {
+    font-size: 12px;
+    color:darkslategrey;
+    text-shadow: 2px 2px 5px gainsboro;
+}
+
+#humanoids{
+    flex-wrap:wrap;
+    margin-bottom: 20px;
+    justify-content:space-around;
+}
+
+.simulation a{
+    margin-bottom: 10px;
+}
