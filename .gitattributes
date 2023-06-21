@@ -1,2 +1,3 @@
 web/* linguist-documentation=false
 web/* linguist-vendored
+*.sql linguist-detectable=true
